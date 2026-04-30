@@ -13,19 +13,19 @@ Proyek ini dikembangkan untuk memenuhi tugas Ujian Tengah Semester mata kuliah *
 
 ### 👥 Anggota Kelompok (TT-46-GAB1)
 
-| Foto | NIM | Nama | Peran |
-| :---: | :---: | :--- | :--- |
-| 👩‍💻 | **101012300091** | Janiar Rahma Putri | Treasury & Research |
-| 👨‍💻 | **101012300225** | Devdan Wisesa Putranto | Team Member |
-| 👨‍💻 | **101012300202** | Muhammad Atqiyya | Team Member |
-| 👨‍💻 | *N/A* | Muhammad Azrilhumaidi | Team Member |
+| Foto | NIM | Nama |
+| :---: | :---: | :--- |
+| 👩‍💻 | **101012300091** | Janiar Rahma Putri |
+| 👨‍💻 | **101012300225** | Devdan Wisesa Putranto | 
+| 👨‍💻 | **101012300202** | Muhammad Atqiyya |
+| 👨‍💻 | *N/A* | Muhammad Azrilhumaidi |
 
 ---
 
 ### 🛠️ Tech Stack & Tools
 - **Platform:** Cloud Computing
 - **Monitoring Tool:** [Uptime Kuma](https://github.com/louislam/uptime-kuma)
-- **Environment:** Ubuntu / Docker / Kubernetes (Sesuaikan dengan yang kamu pakai)
+- **Environment:** Ubuntu / Docker / Uptime Kuma / Ngrox
 
 ---
 
