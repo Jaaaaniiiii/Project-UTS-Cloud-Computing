@@ -13,12 +13,12 @@ Proyek ini dikembangkan untuk memenuhi tugas Ujian Tengah Semester mata kuliah *
 
 ### 👥 Anggota Kelompok (TT-46-GAB1)
 
-| Foto | NIM | Nama |
-| :---: | :---: | :--- |
-| 👩‍💻 | **101012300091** | Janiar Rahma Putri |
-| 👨‍💻 | **101012300225** | Devdan Wisesa Putranto | 
-| 👨‍💻 | **101012300202** | Muhammad Atqiyya |
-| 👨‍💻 | *N/A* | Muhammad Azrilhumaidi |
+| NIM | Nama |
+| :---: | :--- |
+| **101012300091** | Janiar Rahma Putri |
+| **101012300225** | Devdan Wisesa Putranto | 
+| **101012300202** | Muhammad Atqiyya |
+| *N/A* | Muhammad Azrilhumaidi |
 
 ---
 
