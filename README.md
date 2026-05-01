@@ -38,6 +38,18 @@ Proyek ini dikembangkan untuk memenuhi tugas Ujian Tengah Semester mata kuliah *
 # Kelompok 8 — Uptime Kuma
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/21a5ca08-f933-4fb4-b701-7e56910c900e" />
 
+## 🚀 Repository & Tech Stack Selection
+
+**Repository:** [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
+
+### Key Advantages:
+*   **All-in-One Dashboard:** Dipilih karena menyediakan antarmuka monitoring yang modern dan komprehensif tanpa memerlukan konfigurasi database eksternal yang rumit (menggunakan SQLite secara internal).
+*   **Fitur Monitoring Lengkap:** Mendukung berbagai tipe pengecekan seperti HTTP(s), TCP, Ping, hingga DNS yang sangat cocok untuk menguji keberhasilan tunneling Ngrok.
+*   **Docker-Friendly:** Image resmi sangat stabil dan ringan, memudahkan proses deployment menggunakan Docker Compose dengan manajemen volume yang *straightforward*.
+*   **Real-time Notification:** Memiliki sistem notifikasi yang relevan dengan skenario industri untuk menjaga ketersediaan layanan (*High Availability*).
+
+---
+# HANDS-ON
 ## Step 1: Pastikan Docker sudah terinstall
 
 1. Update, Upgrade, dan install docker khusus untuk Ubuntu
@@ -130,6 +142,17 @@ Simpan: **Ctrl+X → Y → Enter**
 | `restart: unless-stopped` | Container otomatis restart jika crash, kecuali jika sengaja di-stop manual |
 | `volumes:` (di level atas) | Mendaftarkan named volume `uptime-kuma-data` agar dikelola oleh Docker (bukan bind mount ke folder host) |
 
+### 🛠️ Customizations (Mandatory Modifications)
+
+Modifikasi yang dilakukan pada file `docker-compose.yml` untuk memenuhi tantangan praktikum Kelompok 8:
+
+#### 1. Named Volume
+**Konfigurasi:** `volumes: - uptime-kuma-data:/app/data`
+> **Alasan:** Secara default, data container bersifat *ephemeral* (hilang saat container dihapus). Dengan modifikasi ini, seluruh data monitor dan akun admin disimpan secara **persisten** di host mesin. Data tetap aman meskipun container di-stop atau sistem mengalami *crash/reboot*.
+
+#### 2. Restart Policy
+**Konfigurasi:** `restart: unless-stopped`
+> **Alasan:** Menjamin ketersediaan dashboard monitoring agar otomatis berjalan kembali jika Docker Engine atau sistem operasi Ubuntu melakukan *restart*, kecuali jika dihentikan secara manual oleh administrator.
 ---
 
 ## Step 3: Jalankan container
